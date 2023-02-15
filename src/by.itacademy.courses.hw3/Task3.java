@@ -1,13 +1,14 @@
 package by.itacademy.courses.hw3;
 
 import java.util.Scanner;
+
 public class Task3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("введите число: ");
-        int a = in.nextInt();
+        int entday = in.nextInt();
 
-        switch (a) {
+        switch (entday) {
             case 1:
                 System.out.println("Понедельник");
                 break;
@@ -24,8 +25,6 @@ public class Task3 {
                 System.out.println("Пятница");
                 break;
             case 6:
-                System.out.println("выходной");
-                break;
             case 7:
                 System.out.println("выходной");
                 break;

@@ -1,7 +1,7 @@
 package by.itacademy.courses.hw3;
 
 public class Task1 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int x = 10;
         Integer y = x;
         System.out.println(y);
