@@ -10,13 +10,12 @@ public class Task7 {
         {
         System.out.println("Начальный массив ");
         }
-        for (int i = 0; i < mas.length; i ++)
+        for (int i = 0; i < mas.length; i++)
         {
             mas[i] = rand.nextInt(20);
             System.out.print(" " + mas[i]);
         }
-        for (int i=0;i<n/2;i++)
-        {
+        for (int i=0;i<n/2;i++) {
             int j=mas[i];
             mas[i]=mas[n-1-i];
             mas[n-1-i]=j;

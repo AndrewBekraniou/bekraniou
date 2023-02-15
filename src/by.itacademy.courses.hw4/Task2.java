@@ -9,16 +9,14 @@ public class Task2 {
         System.out.print("Введите число: ");
         int i = in.nextInt();
 
-int summa =0; int proiz =1;
-while (i>0)
-        {
+        int summa = 0;
+        int proiz = 1;
+        while (i > 0) {
             summa = summa + (i % 10);
             proiz = proiz * (i % 10);
             i /= 10;
         }
         System.out.println("сумма чисел  " + summa);
         System.out.println("произведение чисел  " + proiz);
-
-
-}
+    }
 }

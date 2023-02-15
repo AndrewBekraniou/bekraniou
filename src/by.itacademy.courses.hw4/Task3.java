@@ -10,7 +10,7 @@ public class Task3 {
 
         int f = 1;
         for (int i = 1; i <= a; i++)
-            f=f*i;
+            f = f * i;
         {
             System.out.print(a + "!" + "=" + f);
         }
