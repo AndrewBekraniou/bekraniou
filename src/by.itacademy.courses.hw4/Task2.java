@@ -11,9 +11,11 @@ public class Task2 {
 
         int summa = 0;
         int proiz = 1;
+
         while (i > 0) {
-            summa = summa + (i % 10);
-            proiz = proiz * (i % 10);
+            int ost = i % 10;
+            summa = summa + ost;
+            proiz = proiz * ost;
             i /= 10;
         }
         System.out.println("сумма чисел  " + summa);

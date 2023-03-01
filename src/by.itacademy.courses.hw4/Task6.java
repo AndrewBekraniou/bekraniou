@@ -5,26 +5,26 @@ import java.util.Arrays;
 public class Task6 {
     public static void main(String[] args) {
         double[] mas = {2.5, 0.5, -4.7, 0.9, 8, 145, 7, 3, 1.8, -2};
-        int pol = 0;
-        int neg = 0;
-        for (double i : mas) {
-            if (i > 0) {
-                pol++;
+        int pologit = 0;
+        int negativ = 0;
+        for (double element : mas) {
+            if (element > 0) {
+                pologit++;
             } else {
-                neg++;
+                negativ ++;
             }
         }
-        double[] p = new double[pol];
-        double[] n = new double[neg];
-        int pl = 0;
-        int ng = 0;
-        for (double i : mas) {
-            if (i > 0) {
-                p[pl] = i;
-                pl++;
+        double[] p = new double[pologit];
+        double[] n = new double[negativ];
+        int plelem = 0;
+        int negelem = 0;
+        for (double element : mas) {
+            if (element > 0) {
+                p[plelem] = element;
+                plelem++;
             } else {
-                n[ng] = i;
-                ng++;
+                n[negelem] = element;
+                negelem++;
             }
         }
         System.out.println(Arrays.toString(p));
