@@ -1,14 +1,13 @@
-package by.itacademy.courses.hw5.Task1;
+package by.itacademy.courses.hw5.task1;
 
 public class Person {
     public String fullName;
     public int age;
-    String name = "Vasy";
     public void move() {
-        System.out.println(name + " move");
+        System.out.println(fullName + " move");
     }
     public void talk() {
-        System.out.println(name + " talk");
+        System.out.println(fullName + " talk");
     }
     public Person() {
     }
@@ -19,7 +18,6 @@ public class Person {
     public String getInfo() {
         return fullName + "," + age;
     }
-
 }
 
 

@@ -1,24 +1,23 @@
-package by.itacademy.courses.hw5.Task2;
-
-import java.util.Scanner;
+package by.itacademy.courses.hw5.task2;
 
 public class Phone {
     public int number;
     public String model;
     public int weight;
-    String name = "Vasy";
-
-    public void receiveCall() {
+    public void receiveCall(String name) {
         System.out.println("Звонит: " + name);
     }
     public void getNumber() {
-        System.out.println(number);
+        System.out.println("Номер телефона: "+number);
     }
-    public static void sendMessage(int num1, int num2) {
-        System.out.println(num1 + " ; " + num2);
+    public static void sendMessage(String... numbers) {
+        for (String x : numbers)
+            System.out.println("Отправляем сообщение: " + x);
     }
     public static void receiveCall(String name, int num) {
         System.out.println(name + " - " + num);
+    }
+    public Phone() {
     }
     public Phone(int number, String model, int weight) {
         this.number = number;
@@ -29,7 +28,5 @@ public class Phone {
         this.number = number;
         this.model = model;
     }
-    public Phone() {
-    }
-    }
+}
 
